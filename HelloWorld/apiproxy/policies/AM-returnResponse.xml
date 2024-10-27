@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<AssignMessage continueOnError="false" enabled="true" name="AM-returnResponse">
+    <DisplayName>AM-returnResponse</DisplayName>
+    <Properties/>
+    <Set>
+        <Payload content-type="application/json">{"message" : "Hello World"}</Payload>
+        <Headers/>
+        <QueryParams/>
+        <FormParams/>
+        <!-- <Verb>GET</Verb> -->
+        <Path/>
+    </Set>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+    <AssignTo>response</AssignTo>
+</AssignMessage>
