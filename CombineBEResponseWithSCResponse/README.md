@@ -4,9 +4,9 @@
 This proxy is demonstrate on how to fetch a response from a target using service callout policy and combine that response with the response fetched from the backend target server.
 
 ### Policies Used:  
-[AM-remove-ifNoneMatch](#AM-remove-ifNoneMatch)   
-[FC-callFetchLocation](#FC-callFetchLocation)  
-[AM-SetResponse](#AM-SetResponse)  
+[AM-remove-ifNoneMatch](#AM-remove-ifNoneMatch:)   
+[FC-callFetchLocation](#FC-callFetchLocation:)  
+[AM-SetResponse](#AM-SetResponse:)  
 
 ## Shared flow: fetchLocation
 
@@ -15,12 +15,12 @@ This shared flow calls an external target service and returns a part of that res
 
 
 ### Policies used:
-[SC-getLocation](#SC-getLocation)    
-[EV-fetchCountry](#EV-fetchCountry)  
+[SC-getLocation](#SC-getLocation:)    
+[EV-fetchLocation](#EV-fetchLocation:)  
 
 
 
-#### AM-remove-ifNoneMatch  
+#### AM-remove-ifNoneMatch:  
 This AssignMessage policy removes the header "ifNoneMatch" to make sure that   
 -> the browser does not return cached response to the client and   
 -> the request reaches the target 
