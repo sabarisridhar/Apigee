@@ -20,7 +20,7 @@ This shared flow calls an external target service and returns a part of that res
 
 
 
-#### AM-remove-ifNoneMatch:  
+#### AM-remove-ifNoneMatch  
 This AssignMessage policy removes the header "ifNoneMatch" to make sure that   
 -> the browser does not return cached response to the client and   
 -> the request reaches the target 
