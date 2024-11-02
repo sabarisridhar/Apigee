@@ -5,8 +5,8 @@ This proxy is demonstrate on how to fetch a response from a target using service
 
 ### Policies Used:  
 [AM-remove-ifNoneMatch](#AM-remove-ifNoneMatch)   
-[FC-callFetchLocation](https://github.com/sabarisridhar/Apigee/new/main/CombineBEResponseWithSCResponse#fc-callfetchlocation)  
-[AM-SetResponse](https://github.com/sabarisridhar/Apigee/new/main/CombineBEResponseWithSCResponse#am-setresponse)  
+[FC-callFetchLocation](#FC-callFetchLocation)  
+[AM-SetResponse](#AM-SetResponse)  
 
 ## Shared flow: fetchLocation
 
@@ -15,8 +15,8 @@ This shared flow calls an external target service and returns a part of that res
 
 
 ### Policies used:
-[SC-getLocation](https://github.com/sabarisridhar/Apigee/new/main/CombineBEResponseWithSCResponse#sc-getlocation)    
-[EV-fetchCountry](https://github.com/sabarisridhar/Apigee/new/main/CombineBEResponseWithSCResponse#ev-fetchlocation)  
+[SC-getLocation](#SC-getLocation)    
+[EV-fetchCountry](#EV-fetchCountry)  
 
 
 
