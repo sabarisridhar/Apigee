@@ -4,7 +4,7 @@
 This proxy is demonstrate on how to fetch a response from a target using service callout policy and combine that response with the response fetched from the backend target server.
 
 ### Policies Used:  
-[AM-remove-ifNoneMatch](https://github.com/sabarisridhar/Apigee/new/main/CombineBEResponseWithSCResponse#am-remove-ifnonematch)   
+[AM-remove-ifNoneMatch](#AM-remove-ifNoneMatch)   
 [FC-callFetchLocation](https://github.com/sabarisridhar/Apigee/new/main/CombineBEResponseWithSCResponse#fc-callfetchlocation)  
 [AM-SetResponse](https://github.com/sabarisridhar/Apigee/new/main/CombineBEResponseWithSCResponse#am-setresponse)  
 
