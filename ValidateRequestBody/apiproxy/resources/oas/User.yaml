@@ -1,0 +1,40 @@
+openapi: 3.0.0  
+info: 
+  title: User  
+  version: 1.0.0  
+  
+paths:
+  /: 
+    post: 
+      description: add a new user  
+      operationId: addUser1.0
+      requestBody:
+        description: Request Body Details
+        content: 
+          application/json:
+            schema:
+              $ref: '#/components/schemas/User'
+      responses:
+        '201':
+          description: User Created 
+  
+  
+components:
+  schemas: 
+  
+    User:
+      type: object
+      properties:
+        firstName: 
+          type: string
+        lastName:
+          type: string
+        age:
+          type: integer
+      
+      required:
+        - firstName
+        - lastName
+        - age
+        
+      additionalProperties: false

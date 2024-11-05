@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault continueOnError="false" enabled="true" name="RF-JTP">
+    <DisplayName>RF-JTP</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="text/xml">
+                <Status>400</Status>
+                <Error>Bad Request</Error>
+                <Reason>{fault.name}</Reason>
+                <Message>Please make sure only firstName, lastName and age is passed in the request Payload. Please avoid passing duplicate fields</Message>
+            </Payload>
+            <StatusCode>400</StatusCode>
+            <ReasonPhrase>Server Error</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

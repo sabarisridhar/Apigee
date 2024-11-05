@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<RaiseFault continueOnError="false" enabled="true" name="RF-requestBodyRequired">
+    <DisplayName>RF-requestBodyRequired</DisplayName>
+    <Properties/>
+    <FaultResponse>
+        <Set>
+            <Headers/>
+            <Payload contentType="application/json">
+                {
+                "Status" : "400",
+                "Error" : "Bad Request",
+                "Reason" : "{fault.name}",
+                "Message" : "Please make sure firstName, lastName and age of the user are present in the request body"
+                }
+            </Payload>
+            <StatusCode>400</StatusCode>
+            <ReasonPhrase>Some fields are missing</ReasonPhrase>
+        </Set>
+    </FaultResponse>
+    <IgnoreUnresolvedVariables>true</IgnoreUnresolvedVariables>
+</RaiseFault>

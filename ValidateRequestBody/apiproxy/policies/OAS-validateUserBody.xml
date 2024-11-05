@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<OASValidation continueOnError="false" enabled="true" name="OAS-validateUserBody">
+    <DisplayName>OAS-validateUserBody</DisplayName>
+    <Properties/>
+    <Source>request</Source>
+    <Options>
+        <ValidateMessageBody>true</ValidateMessageBody>
+    </Options>
+    <OASResource>oas://User.yaml</OASResource>
+</OASValidation>

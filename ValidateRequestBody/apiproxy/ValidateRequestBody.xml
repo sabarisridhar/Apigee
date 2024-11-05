@@ -1,0 +1,20 @@
+<APIProxy revision="69" name="ValidateRequestBody">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1730816339126</CreatedAt>
+    <LastModifiedAt>1730816339126</LastModifiedAt>
+    <BasePaths>/addUser</BasePaths>
+    <Policies>
+        <Policy>OAS-validateUserBody</Policy>
+        <Policy>AM-returnResponse</Policy>
+        <Policy>RF-requestBodyRequired</Policy>
+        <Policy>JTP-userData</Policy>
+        <Policy>RF-JTP</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>oas://User.yaml</Resource>
+    </Resources>
+</APIProxy>

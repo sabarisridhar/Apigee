@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ProxyEndpoint name="default">
+    <PreFlow name="PreFlow">
+        <Request>
+            <Step>
+                <Name>JTP-userData</Name>
+            </Step>
+            <Step>
+                <Name>OAS-validateUserBody</Name>
+            </Step>
+        </Request>
+        <Response>
+            <Step>
+                <Name>AM-returnResponse</Name>
+            </Step>
+        </Response>
+    </PreFlow>
+    <Flows/>
+    <PostFlow name="PostFlow">
+        <Request/>
+        <Response/>
+    </PostFlow>
+    <FaultRules>
+        <FaultRule name="OASValidationError-requestBody">
+            <Condition>(OASValidation.OAS-validateUserBody.failed = true)</Condition>
+            <Step>
+                <Name>RF-requestBodyRequired</Name>
+            </Step>
+        </FaultRule>
+        <FaultRule name="JTP-Failed">
+            <Condition>(jsonattack.JTP-userData.failed = true)</Condition>
+            <Step>
+                <Name>RF-JTP</Name>
+            </Step>
+        </FaultRule>
+    </FaultRules>
+    <HTTPProxyConnection>
+        <BasePath>/addUser</BasePath>
+    </HTTPProxyConnection>
+    <RouteRule name="noroute"/>
+</ProxyEndpoint>
