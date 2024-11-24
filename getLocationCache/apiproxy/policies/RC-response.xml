@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ResponseCache continueOnError="false" enabled="true" name="RC-response">
+    <DisplayName>RC-response</DisplayName>
+    <Properties/>
+    <CacheResource>getLocationProxy</CacheResource>
+    <CacheKey>
+        <Prefix>targetResponse</Prefix>
+        <KeyFragment>user</KeyFragment>
+        <KeyFragment ref="request.queryparam.user"/>
+    </CacheKey>
+    <!--<Scope>Exclusive</Scope>-->
+    <ExpirySettings>
+        <ExpiryDate/>
+        <TimeOfDay/>
+        <TimeoutInSec ref="">300</TimeoutInSec>
+    </ExpirySettings>
+    <SkipCacheLookup/>
+    <SkipCachePopulation/>
+</ResponseCache>

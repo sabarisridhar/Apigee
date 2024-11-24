@@ -1,0 +1,21 @@
+<APIProxy revision="4" name="getLocationCache">
+    <DisplayName></DisplayName>
+    <Description></Description>
+    <CreatedAt>1732478431914</CreatedAt>
+    <LastModifiedAt>1732478431914</LastModifiedAt>
+    <BasePaths>/getlocation</BasePaths>
+    <Policies>
+        <Policy>FC-callFetchLocation</Policy>
+        <Policy>AM-SetResponse</Policy>
+        <Policy>RC-response</Policy>
+    </Policies>
+    <ProxyEndpoints>
+        <ProxyEndpoint>default</ProxyEndpoint>
+    </ProxyEndpoints>
+    <Resources>
+        <Resource>jsc://JavaScript-1.js</Resource>
+    </Resources>
+    <TargetEndpoints>
+        <TargetEndpoint>default</TargetEndpoint>
+    </TargetEndpoints>
+</APIProxy>
