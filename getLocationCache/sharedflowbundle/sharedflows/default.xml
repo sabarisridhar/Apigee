@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<SharedFlow name="default">
+    <Step>
+        <Name>LC-checkLocation</Name>
+    </Step>
+    <Step>
+        <Condition>lookupcache.LC-checkLocation.cachehit == false</Condition>
+        <Name>SC-getLocation</Name>
+    </Step>
+    <Step>
+        <Condition>lookupcache.LC-checkLocation.cachehit == false</Condition>
+        <Name>EV-fetchCountry</Name>
+    </Step>
+    <Step>
+        <Condition>lookupcache.LC-checkLocation.cachehit == false</Condition>
+        <Name>PC-addCountry</Name>
+    </Step>
+</SharedFlow>
