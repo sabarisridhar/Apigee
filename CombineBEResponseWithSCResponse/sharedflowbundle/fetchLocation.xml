@@ -1,0 +1,14 @@
+<SharedFlowBundle revision="1" name="fetchLocation">
+    <DisplayName></DisplayName>
+    <Description>get location of a user using IP address</Description>
+    <CreatedAt>1730355005383</CreatedAt>
+    <LastModifiedAt>1730359858670</LastModifiedAt>
+    <Policies>
+        <Policy>SC-getLocation</Policy>
+        <Policy>EV-fetchCountry</Policy>
+    </Policies>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>

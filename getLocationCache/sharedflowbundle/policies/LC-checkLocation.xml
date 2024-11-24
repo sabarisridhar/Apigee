@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<LookupCache continueOnError="false" enabled="true" name="LC-checkLocation">
+    <DisplayName>LC-checkLocation</DisplayName>
+    <Properties/>
+    <CacheResource>fetchLocationSF</CacheResource>
+    <CacheKey>
+        <Prefix>locationResponse</Prefix>
+        <KeyFragment>clientIP</KeyFragment>
+        <KeyFragment ref="proxy.client.ip"/>
+    </CacheKey>
+    <!--Scope>Exclusive</Scope-->
+    <AssignTo>locationResponse.country</AssignTo>
+</LookupCache>

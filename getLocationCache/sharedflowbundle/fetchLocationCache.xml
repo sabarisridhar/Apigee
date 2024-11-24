@@ -1,0 +1,16 @@
+<SharedFlowBundle revision="2" name="fetchLocationCache">
+    <DisplayName></DisplayName>
+    <Description>get location of a user using IP address</Description>
+    <CreatedAt>1732395257028</CreatedAt>
+    <LastModifiedAt>1732395257028</LastModifiedAt>
+    <Policies>
+        <Policy>SC-getLocation</Policy>
+        <Policy>EV-fetchCountry</Policy>
+        <Policy>LC-checkLocation</Policy>
+        <Policy>PC-addCountry</Policy>
+    </Policies>
+    <SharedFlows>
+        <SharedFlow>default</SharedFlow>
+    </SharedFlows>
+    <subType>SharedFlow</subType>
+</SharedFlowBundle>
